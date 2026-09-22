@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="es" class="light">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SISTRAN PE - Inicio</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = { darkMode: 'class' }
+    </script>
+  </head>
+  
+  <body class="bg-slate-100 dark:bg-slate-900 text-slate-800 dark:text-slate-200 transition-colors duration-300 min-h-screen flex flex-col font-sans">
+    
+    <!-- BARRA DE NAVEGACIÓN -->
+    <header class="sticky top-0 z-50 bg-slate-200/90 dark:bg-slate-800/90 backdrop-blur-md shadow-sm border-b border-transparent dark:border-slate-700 transition-colors duration-300">
+      <div class="w-[95%] max-w-7xl mx-auto py-4 flex justify-between items-center flex-wrap">
+        
+        <div class="flex items-center">
+          <a href="javascript:void(0);" class="flex items-center text-blue-900 dark:text-slate-100 font-bold text-2xl md:text-3xl tracking-wide cursor-pointer">
+            <img src="img/Logo2.jpg" alt="Logo SISTRAN" class="w-12 h-12 rounded-lg mr-3 object-cover">
+            <span>SISTRAN PE</span>
+          </a>
+          <a href="javascript:void(0);" class="hidden md:block ml-6 text-sm font-semibold text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Ayuda</a>
+        </div>
+        
+        <!-- BOTÓN HAMBURGUESA -->
+        <button id="btn-menu-movil" class="md:hidden text-blue-900 dark:text-slate-100 hover:scale-110 transition-transform">
+          <svg viewBox="0 0 100 80" width="30" height="30" fill="currentColor">
+            <rect width="100" height="15" rx="8"></rect>
+            <rect y="30" width="100" height="15" rx="8"></rect>
+            <rect y="60" width="100" height="15" rx="8"></rect>
+          </svg>
+        </button>
+
+        <!-- MENÚ DERECHO DESPLEGABLE -->
+        <nav id="menu-principal" class="hidden absolute top-full left-0 w-full bg-white dark:bg-slate-800 flex-col items-center py-5 shadow-lg border-t border-slate-200 dark:border-slate-700 md:static md:w-auto md:bg-transparent md:dark:bg-transparent md:flex md:flex-row md:py-0 md:shadow-none md:border-none gap-6 transition-all z-50">
+          <button id="btn-dark-mode" class="text-xl hover:scale-110 transition-transform">🌙</button>
+          <a href="javascript:void(0);" class="text-sm font-semibold text-slate-600 dark:text-slate-400 hover:text-blue-900 dark:hover:text-blue-400 transition-colors">Iniciar Sesión</a>
+          <a href="javascript:void(0);" class="text-sm font-semibold text-orange-500 border border-orange-500 px-4 py-2 rounded-md hover:bg-orange-500 hover:text-white transition-all">Abrir Cuenta</a>
+        </nav>
+        
+      </div>
+    </header>
+
+    <main class="flex-1 flex flex-col">
+      <!-- SECCIÓN SUPERIOR -->
+      <section class="bg-white dark:bg-slate-800 py-16 px-5 text-center shadow-md z-10 transition-colors duration-300">
+        <div class="max-w-6xl mx-auto flex flex-col items-center">
+          <h1 class="text-blue-900 dark:text-slate-100 text-3xl md:text-5xl font-bold mb-3">¡Bienvenido a tu Banca Digital!</h1>
+          <p class="text-slate-600 dark:text-slate-400 text-lg md:text-xl mb-6">Gestiona tus operaciones de forma segura y eficiente desde SISTRAN PE.</p>
+
+          <p class="text-emerald-500 font-bold text-sm mb-10 capitalize" id="fechaActualDisplay"></p>
+
+          <!-- Tarjeta Virtual Tailwind -->
+          <div class="bg-gradient-to-br from-blue-900 to-blue-700 dark:from-blue-900 dark:to-slate-900 text-white rounded-2xl p-6 w-72 shadow-2xl relative overflow-hidden text-left border border-white/20">
+            <div class="absolute -top-12 -right-12 w-36 h-36 bg-white/5 rounded-full"></div>
+            <div class="text-[11px] uppercase opacity-70 tracking-wider">Cuenta Sueldo SISTRAN</div>
+            <div class="text-3xl font-bold my-4">---------------</div>
+            <div class="font-mono text-base tracking-widest opacity-80">**** **** **** 4589</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN INFERIOR GLASSMORPHISM -->
+      <section class="relative py-16 px-5 flex-1 flex justify-center bg-[url('img/digital.jpg')] bg-cover bg-center bg-fixed">
+        <div class="absolute inset-0 bg-slate-900/60 z-0"></div> 
+        
+        <div class="max-w-6xl mx-auto relative z-10 w-full">
+          <!-- GRID RESPONSIVO: 1 columna en móvil, 2 en tablets, 3 en PC -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+            
+            <div class="bg-white/10 dark:bg-slate-800/60 backdrop-blur-md border border-white/20 dark:border-slate-600 p-8 rounded-2xl shadow-xl w-full max-w-sm text-center hover:-translate-y-2 transition-transform duration-300 text-white">
+              <div class="text-5xl mb-4 drop-shadow-md">💸</div>
+              <h2 class="text-xl font-bold mb-2">Transferencias</h2>
+              <p class="text-slate-200 text-sm mb-6 h-10">Envía dinero a cuentas propias o de terceros al instante.</p>
+              <a href="javascript:void(0);" class="inline-block bg-white/10 border border-white/30 px-6 py-2 rounded-lg font-bold hover:bg-white/30 transition-colors">Ingresar</a>
+            </div>
+
+            <div class="bg-white/10 dark:bg-slate-800/60 backdrop-blur-md border border-white/20 dark:border-slate-600 p-8 rounded-2xl shadow-xl w-full max-w-sm text-center hover:-translate-y-2 transition-transform duration-300 text-white">
+              <div class="text-5xl mb-4 drop-shadow-md">📋</div>
+              <h2 class="text-xl font-bold mb-2">Mi Historial</h2>
+              <p class="text-slate-200 text-sm mb-6 h-10">Revisa el estado de todos tus movimientos recientes.</p>
+              <a href="javascript:void(0);" class="inline-block bg-white/10 border border-white/30 px-6 py-2 rounded-lg font-bold hover:bg-white/30 transition-colors">Ingresar</a>
+            </div>
+
+            <div class="bg-white/10 dark:bg-slate-800/60 backdrop-blur-md border border-white/20 dark:border-slate-600 p-8 rounded-2xl shadow-xl w-full max-w-sm text-center hover:-translate-y-2 transition-transform duration-300 text-white">
+              <div class="text-5xl mb-4 drop-shadow-md">💡</div>
+              <h2 class="text-xl font-bold mb-2">Servicios</h2>
+              <p class="text-slate-200 text-sm mb-6 h-10">Paga tus recibos de luz, agua y telefonía rápidamente.</p>
+              <a href="javascript:void(0);" class="inline-block bg-white/10 border border-white/30 px-6 py-2 rounded-lg font-bold hover:bg-white/30 transition-colors">Ingresar</a>
+            </div>
+
+            <div class="bg-white/10 dark:bg-slate-800/60 backdrop-blur-md border border-white/20 dark:border-slate-600 p-8 rounded-2xl shadow-xl w-full max-w-sm text-center hover:-translate-y-2 transition-transform duration-300 text-white">
+              <div class="text-5xl mb-4 drop-shadow-md">👥</div>
+              <h2 class="text-xl font-bold mb-2">Contactos</h2>
+              <p class="text-slate-200 text-sm mb-6 h-10">Administra tu directorio para envíos frecuentes.</p>
+              <a href="javascript:void(0);" class="inline-block bg-white/10 border border-white/30 px-6 py-2 rounded-lg font-bold hover:bg-white/30 transition-colors">Ingresar</a>
+            </div>
+
+            <div class="bg-white/10 dark:bg-slate-800/60 backdrop-blur-md border border-white/20 dark:border-slate-600 p-8 rounded-2xl shadow-xl w-full max-w-sm text-center hover:-translate-y-2 transition-transform duration-300 text-white">
+              <div class="text-5xl mb-4 drop-shadow-md">⚠️</div>
+              <h2 class="text-xl font-bold mb-2">Reclamos</h2>
+              <p class="text-slate-200 text-sm mb-6 h-10">Centro de atención para resolver tus inconvenientes.</p>
+              <a href="javascript:void(0);" class="inline-block bg-white/10 border border-white/30 px-6 py-2 rounded-lg font-bold hover:bg-white/30 transition-colors">Ingresar</a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- PIE DE PÁGINA (REDES SOCIALES) -->
+    <footer class="bg-white dark:bg-slate-800 py-6 border-t border-slate-200 dark:border-slate-700 transition-colors duration-300 mt-auto">
+      <div class="flex flex-col items-center gap-3">
+        <p class="text-sm font-medium text-slate-500 dark:text-slate-400">&copy; 2026 SISTRAN PE - Todos los derechos reservados.</p>
+        
+        <div class="flex gap-5">
+          <a href="javascript:void(0);" class="text-sm font-semibold text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Facebook</a>
+          <a href="javascript:void(0);" class="text-sm font-semibold text-slate-500 dark:text-slate-400 hover:text-pink-600 dark:hover:text-pink-400 transition-colors">Instagram</a>
+          <a href="javascript:void(0);" class="text-sm font-semibold text-slate-500 dark:text-slate-400 hover:text-red-600 dark:hover:text-red-400 transition-colors">Gmail</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="JS/funciones.js"></script>
+    <script src="JS/main.js"></script>
+  </body>
+</html>
