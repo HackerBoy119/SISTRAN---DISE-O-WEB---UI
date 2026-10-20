@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="es" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INTEGRA-BANK PE | Solicitudes y Contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      body { font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif; }
+    </style>
+  </head>
+  
+  <body class="bg-zinc-100 dark:bg-[#0a0d10] text-zinc-800 dark:text-zinc-100 transition-colors duration-300 min-h-screen flex flex-col antialiased">
+    
+    <!-- 1. CINTILLO SUPERIOR DE SEGURIDAD BANCARIA + LOGOS ORIGINALES (FB, IG, IN) -->
+    <aside class="bg-[#061813] text-zinc-300 text-xs py-2 px-4 border-b border-emerald-950 hidden sm:block">
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <div class="flex items-center gap-2">
+          <svg class="w-4 h-4 text-[#a3e635] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+          </svg>
+          <span data-i18n="top_security"><strong>Zona Segura:</strong> Cifrado SSL 256-bit activo. INTEGRA-BANK jamás te pedirá contraseñas ni token por correo, llamada o WhatsApp.</span>
+        </div>
+        <div class="flex items-center gap-4 text-zinc-400">
+          <span class="flex items-center gap-1">
+            <svg class="w-3.5 h-3.5 text-[#a3e635]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+            </svg>
+            <span data-i18n="top_emergency">Emergencias 24/7:</span> <strong>(044) 480-900</strong>
+          </span>
+          <span class="text-zinc-700">|</span>
+          <div class="flex items-center gap-2.5">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="hover:scale-110 transition-transform" title="Facebook">
+              <svg class="w-4 h-4" viewBox="0 0 24 24">
+                <path fill="#1877F2" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                <path fill="#FFFFFF" d="M16.671 15.543l.532-3.47h-3.328v-2.25c0-.949.465-1.874 1.956-1.874h1.513V4.996s-1.374-.235-2.686-.235c-2.741 0-4.533 1.662-4.533 4.669v2.642H7.078v3.47h3.047v8.385a12.09 12.09 0 003.75 0v-8.385h2.796z"/>
+              </svg>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="hover:scale-110 transition-transform" title="Instagram">
+              <svg class="w-4 h-4" viewBox="0 0 24 24">
+                <defs>
+                  <radialGradient id="ig-top-grad" r="150%" cx="30%" cy="107%">
+                    <stop stop-color="#fdf497" offset="0"/>
+                    <stop stop-color="#fdf497" offset="0.05"/>
+                    <stop stop-color="#fd5949" offset="0.45"/>
+                    <stop stop-color="#d6249f" offset="0.6"/>
+                    <stop stop-color="#285AEB" offset="0.9"/>
+                  </radialGradient>
+                </defs>
+                <rect width="24" height="24" rx="6" fill="url(#ig-top-grad)"/>
+                <path fill="#FFFFFF" d="M12 7.2a4.8 4.8 0 100 9.6 4.8 4.8 0 000-9.6zm0 7.92a3.12 3.12 0 110-6.24 3.12 3.12 0 010 6.24zm6.12-8.04a1.12 1.12 0 11-2.24 0 1.12 1.12 0 012.24 0z"/>
+              </svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="hover:scale-110 transition-transform" title="LinkedIn">
+              <svg class="w-4 h-4" viewBox="0 0 24 24">
+                <rect width="24" height="24" rx="4" fill="#0A66C2"/>
+                <path fill="#FFFFFF" d="M7.12 9.5H4.24v9.26h2.88V9.5zM5.68 5.24a1.67 1.67 0 100 3.34 1.67 1.67 0 000-3.34zm14.08 8.38c0-2.77-1.48-4.06-3.45-4.06-1.59 0-2.3.88-2.7 1.5V9.5h-2.88c.04.86 0 9.26 0 9.26h2.88v-5.17c0-.28.02-.55.1-.75.22-.55.72-1.12 1.56-1.12 1.1 0 1.54.84 1.54 2.07v4.97h2.88v-5.14z"/>
+              </svg>
+            </a>
+          </div>
+          <span class="text-zinc-700">|</span>
+          <a href="solicitudes.html" class="hover:text-[#a3e635] transition-colors" data-i18n="top_help">Centro de Ayuda</a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- 2. BARRA DE NAVEGACIÓN INSTITUCIONAL -->
+    <header class="sticky top-0 z-40 bg-white/95 dark:bg-[#12171d]/95 backdrop-blur-md shadow-sm border-b border-zinc-200 dark:border-emerald-950/60 transition-colors duration-300">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex justify-between items-center">
+        
+        <div class="flex items-center gap-4">
+          <a href="index.html" class="flex items-center gap-3 group cursor-pointer">
+            <img src="img/Logo2.jpg" alt="Logo IntegraBank" class="w-10 h-10 rounded-xl shadow-sm object-cover ring-2 ring-emerald-700/20" />
+            <div>
+              <div class="text-[#063327] dark:text-white font-extrabold text-xl tracking-tight leading-none flex items-center gap-1.5">
+                INTEGRA<span class="text-emerald-600 dark:text-[#a3e635]">BANK</span>
+                <span class="bg-[#a3e635] text-zinc-950 text-[10px] font-extrabold px-1.5 py-0.5 rounded uppercase">PE</span>
+              </div>
+              <span class="text-[11px] text-zinc-500 dark:text-zinc-400 font-semibold tracking-wider uppercase block" data-i18n="nav_subtitle">Banca por Internet</span>
+            </div>
+          </a>
+
+          <nav class="hidden lg:flex items-center gap-1 ml-4 text-sm font-semibold text-zinc-600 dark:text-zinc-300">
+            <a href="index.html" class="px-3 py-1.5 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors" data-i18n="nav_accounts">Inicio y Cuentas</a>
+            <a href="operaciones.html" class="px-3 py-1.5 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors" data-i18n="nav_payments">Pagos y Seguridad</a>
+            <a href="prestamos.html" class="px-3 py-1.5 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors" data-i18n="nav_loans">Simulador Préstamos</a>
+            <a href="solicitudes.html" class="px-3 py-1.5 rounded-lg bg-emerald-950/10 dark:bg-[#a3e635]/15 text-[#064e3b] dark:text-[#a3e635] font-bold" data-i18n="nav_form">Formulario Solicitudes</a>
+          </nav>
+        </div>
+
+        <div class="flex items-center gap-2 sm:gap-3">
+          <div class="flex items-center bg-zinc-100 dark:bg-zinc-800/80 rounded-lg p-1 border border-zinc-200 dark:border-zinc-700">
+            <select id="selector-idioma" aria-label="Seleccionar idioma" class="bg-transparent text-xs font-extrabold text-zinc-700 dark:text-zinc-200 outline-none cursor-pointer px-1">
+              <option value="es" class="bg-white dark:bg-[#12171d]">ES 🇵🇪</option>
+              <option value="en" class="bg-white dark:bg-[#12171d]">EN 🇺🇸</option>
+              <option value="qu" class="bg-white dark:bg-[#12171d]">QU 🏔️</option>
+            </select>
+          </div>
+
+          <button id="btn-dark-mode" class="p-2 rounded-lg text-zinc-500 hover:text-emerald-700 hover:bg-zinc-100 dark:text-zinc-400 dark:hover:bg-zinc-800 transition-all cursor-pointer">
+            <svg class="w-5 h-5 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+            <svg class="w-5 h-5 hidden dark:block text-[#a3e635]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+          </button>
+
+          <div id="nav-zona-invitado" class="flex items-center gap-2 pl-2 border-l border-zinc-200 dark:border-zinc-700">
+            <button onclick="abrirModalAuth('login')" class="text-xs font-bold text-zinc-700 dark:text-zinc-200 hover:text-[#064e3b] dark:hover:text-[#a3e635] px-3 py-2 rounded-xl hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-all cursor-pointer" data-i18n="btn_login">
+              Iniciar Sesión
+            </button>
+            <button onclick="abrirModalAuth('registro')" class="text-xs font-extrabold bg-[#a3e635] hover:bg-[#bef264] text-zinc-950 px-3.5 py-2 rounded-xl shadow-sm transition-all cursor-pointer" data-i18n="btn_register">
+              Abrir Cuenta
+            </button>
+          </div>
+
+          <div id="nav-zona-usuario" class="hidden items-center gap-2 pl-2 border-l border-zinc-200 dark:border-zinc-700">
+            <div class="flex items-center gap-2">
+              <div id="avatar-usuario" class="w-9 h-9 rounded-full bg-gradient-to-tr from-[#064e3b] to-emerald-600 text-[#a3e635] flex items-center justify-center font-extrabold text-sm shadow-sm">AB</div>
+              <div class="hidden xl:block text-left text-xs leading-tight">
+                <span class="nombre-usuario-dinamico font-bold text-zinc-800 dark:text-white block">Andy Benites</span>
+                <span id="estado-social-nav" class="text-emerald-600 dark:text-[#a3e635] text-[10px] font-semibold" data-i18n="session_active">Sesión Activa ✓</span>
+              </div>
+            </div>
+            <button id="btn-cerrar-sesion" class="ml-1 p-2 rounded-lg text-rose-600 hover:bg-rose-50 cursor-pointer" title="Cerrar sesión">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"/></svg>
+            </button>
+          </div>
+
+          <button id="btn-menu-movil" class="lg:hidden p-2 text-zinc-700 dark:text-zinc-200 rounded-lg cursor-pointer">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <nav id="menu-principal" class="hidden lg:hidden bg-white dark:bg-[#12171d] border-b border-zinc-200 dark:border-zinc-800 px-4 py-3 flex-col gap-2 shadow-lg">
+        <a href="index.html" class="py-2 px-3 rounded-lg font-semibold text-sm" data-i18n="nav_accounts">Inicio y Cuentas</a>
+        <a href="operaciones.html" class="py-2 px-3 rounded-lg font-semibold text-sm" data-i18n="nav_payments">Pagos y Seguridad</a>
+        <a href="prestamos.html" class="py-2 px-3 rounded-lg font-semibold text-sm" data-i18n="nav_loans">Simulador Préstamos</a>
+        <a href="solicitudes.html" class="py-2 px-3 rounded-lg font-bold text-sm bg-emerald-950/10 text-[#064e3b] dark:text-[#a3e635]" data-i18n="nav_form">Formulario Solicitudes</a>
+      </nav>
+    </header>
+
+    <main class="flex-1 max-w-7xl mx-auto px-4 sm:px-6 py-8 w-full">
+      
+      <!-- FORMULARIO DE SOLICITUD CON TRADUCCIÓN TOTAL EN INPUTS, PLACEHOLDERS Y SELECTS -->
+      <section class="bg-white dark:bg-[#12171d] border border-zinc-200 dark:border-zinc-800 rounded-2xl shadow-md overflow-hidden grid grid-cols-1 lg:grid-cols-12" id="formulario-contacto">
+        
+        <div class="lg:col-span-5 bg-gradient-to-br from-[#041611] via-[#063327] to-[#064e3b] text-white p-6 sm:p-8 flex flex-col justify-between relative overflow-hidden">
+          <div class="absolute -right-12 -bottom-12 w-56 h-56 bg-[#a3e635]/10 rounded-full blur-2xl pointer-events-none"></div>
+          <div>
+            <span class="bg-[#a3e635]/20 text-[#a3e635] border border-[#a3e635]/30 text-[11px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="form_badge">Atención Preferencial</span>
+            <h1 class="text-xl sm:text-2xl font-extrabold mt-3 leading-tight" data-i18n="form_title">Formulario de Solicitud de Productos y Asesoría</h1>
+            <p class="text-xs sm:text-sm text-emerald-100/80 mt-2 leading-relaxed" data-i18n="form_subtitle">
+              Completa tus datos para solicitar una nueva Tarjeta de Crédito, Apertura de Cuenta en Dólares o agendar una llamada con tu ejecutivo de cuenta en Trujillo.
+            </p>
+
+            <div class="mt-6 space-y-3 text-xs text-emerald-50">
+              <div class="flex items-center gap-3">
+                <span class="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center text-[#a3e635] shrink-0">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                </span>
+                <span data-i18n="form_Check1">Evaluación crediticia en línea sin afectar tu score SBS.</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center text-[#a3e635] shrink-0">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                </span>
+                <span data-i18n="form_Check2">Respuesta garantizada en menos de 15 minutos hábiles.</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center text-[#a3e635] shrink-0">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                </span>
+                <span data-i18n="form_Check3">Protección de Datos Personales conforme a la Ley N° 29733.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 pt-4 border-t border-white/10 flex items-center justify-between text-xs text-emerald-100/80">
+            <span data-i18n="form_imm_q">¿Prefieres atención inmediata?</span>
+            <a href="https://wa.me/51944480900?text=Hola%20IntegraBank,%20deseo%20informaci%C3%B3n%20sobre%20un%20producto%20financiero" target="_blank" rel="noopener noreferrer" class="text-[#a3e635] font-bold hover:underline flex items-center gap-1" data-i18n="form_wa_link">
+              Escribir por WhatsApp &rarr;
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 p-6 sm:p-8">
+          <form id="form-solicitud-bancaria" class="space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="sol-nombre" class="block text-xs font-bold text-zinc-700 dark:text-zinc-300 mb-1" data-i18n="lbl_fullname">Nombres y Apellidos *</label>
+                <input type="text" id="sol-nombre" name="nombre" required data-i18n-placeholder="ph_fullname" placeholder="Ej: Andy Benites" class="w-full text-xs font-medium bg-zinc-50 dark:bg-zinc-800/60 border border-zinc-200 dark:border-zinc-700 rounded-xl py-2.5 px-3 focus:outline-none focus:ring-2 focus:ring-[#84cc16]" />
+              </div>
+              <div>
+                <label for="sol-dni" class="block text-xs font-bold text-zinc-700 dark:text-zinc-300 mb-1" data-i18n="lbl_dni">DNI / Documento de Identidad *</label>
+                <input type="text" id="sol-dni" name="dni" required pattern="[0-9]{8,12}" maxlength="12" data-i18n-placeholder="ph_dni" placeholder="8 dígitos (Ej: 72849102)" class="w-full text-xs font-medium bg-zinc-50 dark:bg-zinc-800/60 border border-zinc-200 dark:border-zinc-700 rounded-xl py-2.5 px-3 focus:outline-none focus:ring-2 focus:ring-[#84cc16]" />
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="sol-correo" class="block text-xs font-bold text-zinc-700 dark:text-zinc-300 mb-1" data-i18n="lbl_email">Correo Electrónico *</label>
+                <input type="email" id="sol-correo" name="correo" required data-i18n-placeholder="ph_email" placeholder="cliente@correo.com" class="w-full text-xs font-medium bg-zinc-50 dark:bg-zinc-800/60 border border-zinc-200 dark:border-zinc-700 rounded-xl py-2.5 px-3 focus:outline-none focus:ring-2 focus:ring-[#84cc16]" />
+              </div>
+              <div>
+                <label for="sol-celular" class="block text-xs font-bold text-zinc-700 dark:text-zinc-300 mb-1" data-i18n="lbl_phone">Teléfono Celular *</label>
+                <input type="tel" id="sol-celular" name="celular" required pattern="[0-9]{9}" maxlength="9" data-i18n-placeholder="ph_phone" placeholder="987654321" class="w-full text-xs font-medium bg-zinc-50 dark:bg-zinc-800/60 border border-zinc-200 dark:border-zinc-700 rounded-xl py-2.5 px-3 focus:outline-none focus:ring-2 focus:ring-[#84cc16]" />
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="sol-producto" class="block text-xs font-bold text-zinc-700 dark:text-zinc-300 mb-1" data-i18n="lbl_product">Producto Financiero a Solicitar *</label>
+                <select id="sol-producto" name="producto" required class="w-full text-xs font-semibold bg-zinc-50 dark:bg-zinc-800/60 border border-zinc-200 dark:border-zinc-700 rounded-xl py-2.5 px-3 focus:outline-none focus:ring-2 focus:ring-[#84cc16] cursor-pointer">
+                  <option value="" data-i18n="opt_select_prod">-- Selecciona una opción --</option>
+                  <option value="Tarjeta Visa Signature" data-i18n="opt_prod_1">Tarjeta de Crédito Visa Signature</option>
+                  <option value="Préstamo Efectivo" data-i18n="opt_prod_2">Préstamo Personal Inmediato</option>
+                  <option value="Depósito Plazo Fijo 7.5%" data-i18n="opt_prod_3">Depósito a Plazo Fijo (7.50% TREA)</option>
+                  <option value="Cuenta Sueldo" data-i18n="opt_prod_4">Portabilidad de Cuenta Sueldo</option>
+                  <option value="Asesoría Hipotecaria" data-i18n="opt_prod_5">Crédito Hipotecario / Vehicular</option>
+                </select>
+              </div>
+              <div>
+                <label for="sol-agencia" class="block text-xs font-bold text-zinc-700 dark:text-zinc-300 mb-1" data-i18n="lbl_branch">Sede / Canal de Atención *</label>
+                <select id="sol-agencia" name="agencia" required class="w-full text-xs font-semibold bg-zinc-50 dark:bg-zinc-800/60 border border-zinc-200 dark:border-zinc-700 rounded-xl py-2.5 px-3 focus:outline-none focus:ring-2 focus:ring-[#84cc16] cursor-pointer">
+                  <option value="100% Digital" data-i18n="opt_branch_1">100% Digital (Videollamada / App)</option>
+                  <option value="Agencia Centro Histórico - Trujillo" data-i18n="opt_branch_2">Agencia Centro Histórico - Trujillo</option>
+                  <option value="Agencia Mall Plaza - Trujillo" data-i18n="opt_branch_3">Agencia Mall Plaza - Trujillo</option>
+                  <option value="Agencia El Golf - Trujillo" data-i18n="opt_branch_4">Agencia El Golf - Trujillo</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label for="sol-mensaje" class="block text-xs font-bold text-zinc-700 dark:text-zinc-300 mb-1" data-i18n="lbl_message">Comentarios o Consulta Adicional</label>
+              <textarea id="sol-mensaje" name="mensaje" rows="2" data-i18n-placeholder="ph_message" placeholder="Indica el horario en que prefieres ser contactado o detalles de tu solicitud..." class="w-full text-xs font-medium bg-zinc-50 dark:bg-zinc-800/60 border border-zinc-200 dark:border-zinc-700 rounded-xl py-2 px-3 focus:outline-none focus:ring-2 focus:ring-[#84cc16]"></textarea>
+            </div>
+
+            <div class="flex items-start gap-2 pt-1">
+              <input type="checkbox" id="sol-terminos" required class="mt-0.5 rounded border-zinc-300 text-[#064e3b] focus:ring-[#84cc16] cursor-pointer" />
+              <label for="sol-terminos" class="text-[11px] text-zinc-500 dark:text-zinc-400 cursor-pointer" data-i18n="lbl_terms">
+                Acepto el tratamiento de mis datos personales conforme a la <strong>Ley N° 29733</strong> y autorizo a INTEGRA-BANK PE a enviarme la propuesta comercial.
+              </label>
+            </div>
+
+            <div class="pt-2 flex flex-col sm:flex-row gap-3">
+              <button type="submit" class="flex-1 bg-[#a3e635] hover:bg-[#bef264] text-zinc-950 font-extrabold text-xs sm:text-sm py-3 px-6 rounded-xl shadow-md hover:shadow-lg transition-all cursor-pointer flex items-center justify-center gap-2">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
+                <span data-i18n="btn_submit_form">Enviar Solicitud Bancaria</span>
+              </button>
+              <button type="reset" class="py-3 px-4 rounded-xl border border-zinc-200 dark:border-zinc-700 text-xs font-bold text-zinc-600 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors cursor-pointer" data-i18n="btn_clear_form">
+                Limpiar
+              </button>
+            </div>
+          </form>
+        </div>
+
+      </section>
+
+    </main>
+
+    <footer class="bg-white dark:bg-[#061813] border-t border-zinc-200 dark:border-emerald-950 py-8 text-zinc-600 dark:text-zinc-400 text-xs mt-auto">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <div class="flex items-center gap-2">
+          <img src="img/Logo2.jpg" alt="Logo" class="w-6 h-6 rounded object-cover" />
+          <span class="font-extrabold text-[#063327] dark:text-white">INTEGRA-BANK PE</span>
+          <span data-i18n="footer_rights">&copy; 2026 Todos los derechos reservados.</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <span data-i18n="footer_follow" class="font-bold">Síguenos:</span>
+          <a href="https://facebook.com" target="_blank" class="hover:text-[#064e3b] dark:hover:text-[#a3e635] font-bold">Facebook</a>
+          <a href="https://instagram.com" target="_blank" class="hover:text-[#064e3b] dark:hover:text-[#a3e635] font-bold">Instagram</a>
+          <a href="https://linkedin.com" target="_blank" class="hover:text-[#064e3b] dark:hover:text-[#a3e635] font-bold">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- BOTÓN FLOTANTE CON LOGO OFICIAL DE WHATSAPP (#25D366) -->
+    <a href="https://wa.me/51944480900?text=Hola%20IntegraBank%20PE,%20deseo%20informaci%C3%B3n" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="fixed bottom-6 left-6 z-40 group flex items-center gap-2.5 bg-[#25D366] hover:bg-[#20bd5a] text-white p-3.5 rounded-full shadow-[0_8px_25px_rgba(37,211,102,0.45)] ring-2 ring-white dark:ring-zinc-900 hover:scale-105 transition-all">
+      <svg class="w-7 h-7 fill-current" viewBox="0 0 32 32">
+        <path d="M16.004 2.667C8.64 2.667 2.667 8.64 2.667 16c0 2.347.613 4.64 1.787 6.667L2.667 29.333l6.827-1.787A13.257 13.257 0 0016.004 29.333c7.36 0 13.333-5.973 13.333-13.333S23.364 2.667 16.004 2.667zm7.76 18.827c-.32.907-1.867 1.733-2.613 1.84-.667.093-1.52.133-2.453-.16-.56-.187-1.293-.427-2.213-.827-3.893-1.68-6.44-5.6-6.627-5.867-.187-.267-1.587-2.107-1.587-4.013s1-2.853 1.36-3.24c.36-.387.773-.48 1.04-.48s.533.013.76.013c.24 0 .56-.093.88.667.32.773 1.093 2.68 1.187 2.88.093.2.16.427.027.68-.133.267-.2.427-.387.653-.2.227-.413.507-.587.68-.2.187-.4.4-.173.787.227.387 1.013 1.667 2.16 2.693 1.48 1.32 2.733 1.733 3.12 1.92.387.187.613.16.84-.093.227-.267.973-1.133 1.227-1.52.267-.387.52-.32.88-.187.36.133 2.267 1.067 2.653 1.267.387.2.64.293.733.453.107.16.107.933-.213 1.84z"/>
+      </svg>
+      <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 text-xs font-extrabold tracking-wide">WhatsApp 24/7</span>
+    </a>
+
+    <div id="toast-notificacion" class="fixed bottom-5 right-5 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none">
+      <div class="bg-[#063327] text-[#a3e635] border border-[#a3e635]/30 px-4 py-3 rounded-xl shadow-2xl text-xs font-semibold">
+        <span id="toast-mensaje">Operación realizada con éxito</span>
+      </div>
+    </div>
+
+    <script src="JS/main.js"></script>
+  </body>
+</html>
